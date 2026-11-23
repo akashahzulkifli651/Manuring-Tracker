@@ -1,0 +1,264 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ldg Digital Manuring 2026</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Layout: single column field-ops tracker, summary first, tap-to-edit detail below. Shared via db. */
+:root{--bg:#f4f6f2;--card:#fff;--tx:#1b2a1e;--mut:#5f6e61;--bd:#d9e0d5;--ac:#2f7d3b;--ac2:#e2f0e3;--h1:#c27410;--h2:#2b6cb0;--bad:#b83227;--fd:"Space Grotesk",system-ui,sans-serif;--fb:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111611;--card:#1a221b;--tx:#e6eee6;--mut:#9aa89b;--bd:#2b362c;--ac:#5fbf6e;--ac2:#1e3321;--h1:#e8a33d;--h2:#6aa6e8;--bad:#ff7b6e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111611;--card:#1a221b;--tx:#e6eee6;--mut:#9aa89b;--bd:#2b362c;--ac:#5fbf6e;--ac2:#1e3321;--h1:#e8a33d;--h2:#6aa6e8;--bad:#ff7b6e;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0 auto;max-width:720px;background:var(--bg);color:var(--tx);font:15px/1.4 var(--fb);padding-block:12px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font:700 20px/1.2 var(--fd);margin:4px 0 2px}h3{font:700 15px var(--fd);margin:14px 0 8px}
+.sub{color:var(--mut);font-size:12px;margin-bottom:6px}
+.st{font-size:12px;color:var(--mut);margin-bottom:8px;min-height:16px}.st b{color:var(--ac);font-weight:600}.st.warn b{color:var(--h1)}
+.bn{background:var(--ac2);border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin-bottom:10px;font-size:13px;display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.tabs{display:flex;gap:6px;margin:8px 0}.tabs button,select{flex:1;min-width:0;padding:9px 4px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;font:inherit;font-size:14px}
+.tabs button.on{background:var(--ac);color:#fff;border-color:var(--ac)}select{flex:none;width:100%;margin-bottom:10px}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+button:disabled,input:disabled{opacity:.5}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-bottom:10px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.big{font:700 26px var(--fd);font-variant-numeric:tabular-nums}.mut{color:var(--mut);font-size:12px;font-variant-numeric:tabular-nums}
+.bar{height:9px;background:var(--ac2);border-radius:6px;overflow:hidden;margin:6px 0 2px}.bar i{display:block;height:100%;background:var(--c,var(--ac))}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}.grid .card{margin:0;min-width:0}
+details{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+summary{cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}
+.sb{margin-top:10px;padding-top:8px;border-top:1px dashed var(--bd)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip{border:1px solid var(--bd);background:transparent;color:var(--tx);border-radius:16px;padding:6px 10px;font:inherit;font-size:12.5px}
+.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}.chip.all{border-style:dashed;color:var(--mut)}.chip.all.on{color:#fff}.chip.arm{border-color:var(--bad);color:var(--bad)}
+.tag{font-size:11px;padding:1px 7px;border-radius:9px;background:var(--ac2);color:var(--ac)}
+input{width:100px;max-width:100%;padding:6px 8px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit;font-size:13px}
+.x{border:none;background:none;color:var(--mut);font-size:13px;padding:2px 6px;text-decoration:underline}.x.arm{color:var(--bad)}
+.neg{color:var(--bad)}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:8px;font-variant-numeric:tabular-nums}th,td{text-align:right;padding:3px 0}th:first-child,td:first-child{text-align:left}th{color:var(--mut);font-weight:500}.ar{width:100%;margin-top:8px}
+.reset{margin-top:14px;background:none;border:none;color:var(--mut);text-decoration:underline;font:inherit;font-size:12px}.reset.arm{color:var(--bad)}
+</style>
+<h1>Ldg Digital – 2026 Manuring</h1>
+<div class="sub">Oil palm fertiliser program · progress weighted by mt · enter applied mt for each application (or tap Full)</div>
+<div class="st" id="st"></div>
+<div id="bn"></div>
+<div class="tabs"><button data-t="o">Overview</button><button data-t="f">Fields</button><button data-t="z">Fertiliser</button><button data-t="s">Stock</button></div>
+<select id="flt"><option value="">All fields</option><option value="M">Mature only</option><option value="I">Immature only</option></select>
+<div id="v"></div>
+<div id="ft"></div>
+<script>
+const MR=[["AC","Feb–Mar",1],["MOP","Feb–Mar",1],["BOR","Feb–Mar",1],["GML","Apr",1],["RP","May–Jun",1],["AC","Aug–Oct",2],["MOP","Aug–Oct",2]];
+const MD=`P06B|1|40.90|5031|2,1,.1,0,1,1.75,1
+P06B|2|31.02|3815|2,1,.1,0,1,1.75,1
+07B1|1|34.25|4144|2,1,0,0,1.25,2,1
+07B1|2|26.95|3261|2,1,0,0,1.25,2,1
+07B3|1|32.32|3781|2,1,0,0,1.25,2,1
+07B3|2|25.42|2974|2,1,0,1.75,1.25,2,1
+07B3A|1|50.93|5296|2,1,.1,0,1.25,2,1
+07B3A|2|35.69|3712|2,1,.1,0,1.25,2,1
+07B3B|1|48.96|6364|2.25,1,0,0,1.25,2,1
+2015B|1|29.95|4971|2.25,1,.1,0,1.5,2.25,1.25
+2015B|2|38.85|6449|2.25,1,.1,0,1.5,2.25,1.25
+2015E|1|27.16|4373|2.25,1.25,0,0,1.5,2.5,1
+2015E|2|28.84|4643|2.25,1.25,0,0,1.5,2.5,1
+2016B|1|38.11|6469|2.25,1,.1,0,1.5,2.5,1.25
+2016B|2|37.18|6310|2.25,1,.1,0,1.5,2.5,1.25
+2017A|1|29.97|4705|2.25,1,0,0,1.5,2.5,1
+2017A|2|19.57|3072|2.25,1,0,2,1.5,2.5,1
+2017A|3|19.53|3066|2.25,1,0,2,1.5,2.5,1
+2017A|4|30.44|4780|2.25,1,0,0,1.5,2.5,1
+2017B|1|29.27|4567|2.25,1.25,0,0,1.5,2,1
+2017B|2|19.30|3010|2.5,1,.1,0,1.5,2,1
+2017B|3|19.36|3021|2.5,1,.1,0,1.5,2,1
+2017B|4|29.43|4591|2.25,1,.1,2,1.5,2,1
+2017C|1|31.93|5396|2,1,.1,2,1.5,2,1
+2017C|2|30.64|5179|2,1,.1,0,1.5,2,1
+2017C|3|19.14|3235|2,1,.1,0,1.5,2,1
+2017C|4|25.45|4301|2,1,.1,0,1.5,2,1.25
+2018A|1|30.97|5172|2.5,1.25,.1,0,1.5,2.25,1.25
+2018A|2|38.80|6479|2.5,1.25,.1,0,1.5,2.25,1.25
+2018A|3|29.64|4950|2.5,1.25,.1,0,1.5,2.25,1.25
+2018B1|3|26.62|4472|2.5,1,.1,0,1.5,2.25,1.25
+2018B1|4|25.31|4252|2.25,1,.1,0,1.5,2.25,1.25
+2019A|1|46.45|7896|2.25,1.25,.1,2,1.5,2.5,1.25
+2019B|1|19.38|3275|2.25,1.25,0,2,1.5,2.25,1.25
+2019B|2|29.28|4948|2.5,1.25,0,0,1.5,2.25,1.25
+P06C|1|21.13|2409|2.25,1,0,0,.75,2.25,0
+P06C|2|40.36|4600|2.25,1,0,0,.75,2.5,0
+08C1|1|13.59|1726|2,1,0,0,1.5,2,1
+08C1|2|22.67|2879|2,1.25,0,0,1.5,2,1
+2009C|1|36.13|3830|2.25,1,.1,0,1,2,1
+2009C|2|32.96|3493|2.25,1,.1,0,1,1.75,1.25
+2009C1|1|37.38|4560|2.25,1,.1,1.75,1,2.25,1.25
+2009C1|2|38.77|4730|2.25,1,.1,1.75,1,2.25,1.25
+2012A|1|25.60|4019|2.5,1.25,0,0,1.25,2.75,1.25
+2012A|2|39.46|6195|2.5,1.25,0,2,1.25,2.75,1.25
+2012B|1|25.69|3956|2.5,1.25,.1,0,1.25,2.5,1
+2012B|2|41.08|6326|2.5,1.25,0,2,1.25,2.5,1
+2014C|1|7.40|1154|3,1.5,0,0,1.25,3,1.5
+2014A|1|29.30|4629|2.75,1,0,0,1.25,2.75,1.25
+2014A|2|32.59|5149|2.75,1,0,0,1.25,2.75,1.25
+2023D|1|10.79|1575|0,0,0,0,0,2,1.25
+2009D|1|29.17|3646|2.25,1,0,0,1,2.25,1
+2009D|2|21.98|2747|2.25,1,.1,0,1,2.5,1
+2009D|3|26.24|3280|2.25,1,0,1.75,1,2.25,1`;
+const ID=[["2024A (imm)","1",70.05,10227,[["COMP65","Jan",1.5,1],["BOR","Apr",.1,1],["COMP65","Apr",1.5,1],["KIES","Apr",.5,1],["COMP65","Jul",1.5,2],["RP","Aug",2,2]]],
+["2023D (imm)","1",10.79,1575,[["AC","May",1.75,1],["MOP","May",1.25,1],["BOR","Jun",.1,1],["RP","Jul",2,2]]]];
+const FN={AC:"Ammonium chloride (AC)",MOP:"Muriate of potash (MOP)",BOR:"Borate",GML:"Ground magnesium limestone (GML)",RP:"Rock phosphate (RP)",COMP65:"Compound 65",KIES:"Kieserite"};
+const FC={AC:"#2f7d3b",MOP:"#c0392b",BOR:"#8e44ad",GML:"#7f8c8d",RP:"#b9770e",COMP65:"#16a085",KIES:"#2b6cb0"};
+const SAFE=s=>s.replace(/[^A-Za-z0-9_.~:@+-]/g,"_");
+const rows=[],byDid={};
+MD.split("\n").forEach(l=>{const [b,s,ha,p,r]=l.split("|");const pl=+p;
+ const a=[];r.split(",").forEach((v,i)=>{v=+v;if(v>0)a.push({f:MR[i][0],rd:MR[i][1],h:MR[i][2],rate:v,t:v*pl/1000})});
+ rows.push({id:b+"/"+s,did:SAFE(b+"/"+s),blk:b,sub:s,ha:+ha,pl,ty:"M",a})});
+ID.forEach(x=>rows.push({id:x[0]+"/"+x[1],did:SAFE(x[0]+"/"+x[1]),blk:x[0],sub:x[1],ha:x[2],pl:x[3],ty:"I",a:x[4].map(y=>({f:y[0],rd:y[1],h:y[3],rate:y[2],t:y[2]*x[3]/1000}))}));
+rows.forEach(r=>byDid[r.did]=r);
+
+/* state */
+let prog={},trips=[],tab="o",open={},names={},asked={};
+let db=null,userCap=null,uid="",mode="loading",canWrite=true,isAdmin=true,live=false,stale=false,note="",armed="",armReset=false,pending=false,dismissed=false;
+const iso=()=>new Date().toISOString();
+const dstr=t=>{try{return new Date(t).toLocaleDateString(undefined,{day:"numeric",month:"short"})}catch(e){return""}};
+const f1=n=>n.toLocaleString(undefined,{maximumFractionDigits:1});
+const f2=n=>n.toLocaleString(undefined,{maximumFractionDigits:2});
+const dn=k=>{const [d,i]=k.split("#");return(prog[d]&&prog[d].a&&prog[d].a[i])||0};
+const flt=()=>document.getElementById("flt").value;
+const cur=()=>rows.filter(r=>!flt()||r.ty===flt());
+const apps=rs=>rs.flatMap(r=>r.a.map((a,i)=>({...a,r,k:r.did+"#"+i})));
+const stat=l=>{const T=l.reduce((s,a)=>s+a.t,0),D=l.reduce((s,a)=>s+dn(a.k)*a.t,0);return{T,D,p:T?D/T*100:0,n:l.length,nd:l.filter(a=>dn(a.k)>=.999).length}};
+const bar=(p,c)=>`<div class="bar"><i style="width:${Math.min(100,p)}%;${c?"--c:"+c:""}"></i></div>`;
+const got=(f,h)=>trips.filter(t=>t.f===f&&t.h===h).reduce((s,t)=>s+t.mt,0);
+const ro=()=>!canWrite;
+const dis=()=>canWrite?"":"disabled";
+const who=id=>!id?"":id===uid?"You":(names[id]||"");
+
+/* local fallback + legacy import */
+function legacy(){let d={},r={};try{d=JSON.parse(localStorage.getItem("mt26")||"{}")}catch(e){}try{r=JSON.parse(localStorage.getItem("mr26")||"{}")}catch(e){}
+ const p={};Object.keys(d).forEach(k=>{const [rid,i]=k.split("#"),dd=SAFE(rid),v=Math.min(1,+d[k]||0);if(byDid[dd]&&v>0)(p[dd]=p[dd]||{a:{}}).a[i]=v});
+ const t=[];Object.keys(r).forEach(k=>{const [f,h]=k.split("|");(r[k]||[]).forEach(x=>{if(x&&x.mt>0)t.push({f,h:+h,mt:+x.mt})})});
+ return{p,t}}
+function loadLocal(){let p=null,t=null;try{p=JSON.parse(localStorage.getItem("mtp26")||"null");t=JSON.parse(localStorage.getItem("mtt26")||"null")}catch(e){}
+ if(!p&&!t){const L=legacy();p=L.p;t=L.t.map((x,i)=>({id:"t"+i,f:x.f,h:x.h,mt:x.mt,ts:iso(),by:""}))}
+ prog=p||{};trips=t||[]}
+function saveLocal(){try{localStorage.setItem("mtp26",JSON.stringify(prog));localStorage.setItem("mtt26",JSON.stringify(trips))}catch(e){}}
+
+/* writes */
+const qs={};
+function queue(path,fn){const p=(qs[path]||Promise.resolve()).catch(()=>{}).then(fn);qs[path]=p;return p}
+function werr(e){if(e&&e.code==="invalid_argument"){canWrite=false;note="You can view this page but not edit it."}else if(e&&e.code==="quota_exceeded"){note="Storage is full. Ask the page owner to clear space."}else note="Couldn't save that change. Try again.";render();setTimeout(()=>{note="";render()},5000)}
+function writeRow(d,a){const empty=!Object.keys(a).length;
+ if(empty)delete prog[d];else prog[d]={a,by:uid,at:iso()};
+ if(mode==="shared"){const p="progress/"+d;queue(p,()=>empty?db.doc(p).delete():db.doc(p).set({a,by:uid,at:iso()})).catch(werr)}else saveLocal()}
+function setMany(pairs){const by={};pairs.forEach(([k,v])=>{const [d,i]=k.split("#");if(!by[d])by[d]={...((prog[d]&&prog[d].a)||{})};if(v>0)by[d][i]=Math.min(1,v);else delete by[d][i]});
+ Object.keys(by).forEach(d=>writeRow(d,by[d]));render()}
+function addTrip(f,h,mt){const t={f,h,mt,ts:iso(),by:uid};
+ if(mode==="shared"){const ref=db.collection("trips").doc();t.id=ref.id;trips.push(t);render();queue("trips/"+t.id,()=>ref.set({f,h,mt,ts:t.ts,by:uid})).catch(werr)}
+ else{t.id="t"+Date.now();trips.push(t);saveLocal();render()}}
+function editTrip(id,mt){const t=trips.find(x=>x.id===id);if(!t)return;t.mt=mt;
+ if(mode==="shared")queue("trips/"+id,()=>db.doc("trips/"+id).update({mt})).catch(werr);else saveLocal();render()}
+function delTrip(id){trips=trips.filter(x=>x.id!==id);
+ if(mode==="shared")queue("trips/"+id,()=>db.doc("trips/"+id).delete()).catch(werr);else saveLocal();render()}
+function resetAll(){const ds=Object.keys(prog);prog={};
+ if(mode==="shared")ds.forEach(d=>queue("progress/"+d,()=>db.doc("progress/"+d).delete()).catch(werr));else saveLocal();render()}
+async function importLegacy(){const L=legacy();dismissed=true;note="Importing…";render();
+ try{for(const d of Object.keys(L.p)){await db.doc("progress/"+d).set({a:L.p[d].a,by:uid,at:iso()})}
+  for(const x of L.t){await db.collection("trips").doc().set({f:x.f,h:x.h,mt:x.mt,ts:iso(),by:uid})}
+  note="Imported from this device."}catch(e){werr(e);return}
+ render();setTimeout(()=>{note="";render()},4000)}
+function legacyCount(){const L=legacy();return Object.keys(L.p).length+L.t.length}
+
+/* names of people who edited */
+async function needNames(){if(!userCap||!userCap.profiles)return;
+ const ids=[...new Set([...Object.values(prog).map(x=>x&&x.by),...trips.map(t=>t.by)].filter(x=>x&&x!==uid&&!asked[x]))];
+ if(!ids.length)return;ids.forEach(x=>asked[x]=1);
+ try{const ps=await userCap.profiles(ids);ids.forEach(i=>{if(ps&&ps[i]&&ps[i].name)names[i]=ps[i].name});refresh()}catch(e){}}
+
+/* views */
+function fertList(A,detail){return Object.keys(FN).filter(f=>A.some(a=>a.f===f)).map(f=>{const L=A.filter(a=>a.f===f),s=stat(L);
+ let ex="";if(detail){const rds=[...new Set(L.map(a=>a.rd))];ex=rds.map(r=>{const q=stat(L.filter(a=>a.rd===r));return `<div class="row mut" style="margin-top:4px"><span>${r}</span><span>${f1(q.p)}% · ${f1(q.D)}/${f1(q.T)} mt</span></div>`+bar(q.p,FC[f])}).join("")}
+ return `<div class="card"><div class="row"><b>${FN[f]}</b><b>${f1(s.p)}%</b></div>${detail?bar(s.p,FC[f]):""}<div class="mut">${f1(s.D)} / ${f1(s.T)} mt · ${s.nd}/${s.n} applications</div>${ex}${rc(f,detail,detail?null:A)}</div>`}).join("")}
+function rc(f,det,A){const all=(A||apps(rows)).filter(a=>a.f===f);
+ return [1,2].map(h=>{const L=all.filter(a=>a.h===h);if(!L.length)return"";const s=stat(L),g=got(f,h),k=f+"|"+h,pc=s.T?Math.min(100,g/s.T*100):0,bal=g-s.D,nm=h===1?"1st half":"2nd half";
+  if(!det)return `<div class="row mut" style="margin-top:8px"><span>${nm}</span><span>${f1(s.p)}% · ${f1(s.D)} / ${f1(s.T)} mt</span></div>${bar(s.p,FC[f])}<div class="mut">Received ${f2(g)} / ${f1(s.T)} mt</div>`;
+  const tl=trips.filter(t=>t.f===f&&t.h===h).sort((a,b)=>(a.ts||"")<(b.ts||"")?-1:1);
+  const tr=tl.map((x,i)=>{const w=who(x.by);return `<div class="row" style="margin-top:4px"><span class="mut">Trip ${i+1}${x.ts?" · "+dstr(x.ts):""}${w?" · "+w:""}</span><span><input type="number" step="any" min="0" value="${x.mt}" data-e="${x.id}" aria-label="Trip ${i+1} mt" ${dis()}> mt <button class="x ${armed===x.id?"arm":""}" data-x="${x.id}" ${dis()}>${armed===x.id?"Delete?":"Delete"}</button></span></div>`}).join("");
+  return `<div class="sb"><div class="row"><b>${nm}</b><span class="mut">Received ${f2(g)} / ${f1(s.T)} mt (${f1(pc)}%)</span></div>${bar(pc,FC[f])}<div class="mut">Applied ${f1(s.D)} mt · In store <b class="${bal<0?"neg":""}">${f2(bal)} mt</b>${bal<0?" (applied exceeds received)":""}</div>${tr}<div class="row" style="margin-top:6px"><input type="number" step="any" min="0" placeholder="New trip mt" id="n-${k}" aria-label="New trip mt" ${dis()}><button class="chip" data-a="${k}" ${dis()}>+ Add trip</button></div></div>`}).join("")}
+function stockView(){const A=apps(rows);
+ const cards=Object.keys(FN).filter(f=>A.some(a=>a.f===f)).map(f=>{const L=A.filter(a=>a.f===f),s=stat(L),g=got(f,1)+got(f,2),st=g-s.D,rem=s.T-s.D,net=st-rem;
+  const hv=[1,2].map(h=>{const l=L.filter(a=>a.h===h);if(!l.length)return"";const q=stat(l),gg=got(f,h);return `<tr><td>${h===1?"1st half":"2nd half"}</td><td>${f2(gg)}</td><td>${f2(q.D)}</td><td>${f2(gg-q.D)}</td></tr>`}).join("");
+  return `<div class="card"><div class="row"><b>${FN[f]}</b><span class="big ${st<0?"neg":""}" style="${st<0?"":"color:var(--ac)"}">${f2(st)} mt</span></div><div class="mut">Stock = received ${f2(g)} − applied ${f2(s.D)} mt</div><div class="tw"><table><tr><th></th><th>Received</th><th>Applied</th><th>Stock</th></tr>${hv}</table></div><div class="mut" style="margin-top:6px">Still to apply ${f2(rem)} mt · ${net>=0?"surplus after program":"still to receive"} <b>${f2(Math.abs(net))} mt</b></div></div>`}).join("");
+ return `<div class="mut" style="margin-bottom:8px">Stock covers all fields. Add received trips in the Fertiliser tab; applied mt comes from the Fields tab.</div>`+cards}
+function fieldsView(rs){let h="";const g={};rs.forEach(r=>(g[r.blk]=g[r.blk]||[]).push(r));
+ Object.keys(g).forEach(b=>{const R=g[b],L=apps(R),s=stat(L),ha=R.reduce((x,r)=>x+r.ha,0);
+  const combos=[...new Set(L.map(a=>a.f+"|"+a.rd))];
+  h+=`<details data-b="${b}" ${open[b]?"open":""}><summary><div class="row"><b>${b}</b><span><span class="tag">${ha.toFixed(1)} ha</span> <b>${f1(s.p)}%</b></span></div>${bar(s.p)}<div class="mut">${f1(s.D)} / ${f1(s.T)} mt</div></summary>`;
+  h+=combos.map(c=>{const [f,rd]=c.split("|"),q=stat(L.filter(a=>a.f===f&&a.rd===rd));return `<div class="row mut" style="margin-top:8px"><span>${f} · ${rd}</span><span>${f1(q.p)}% · ${f1(q.D)}/${f1(q.T)} mt</span></div>`+bar(q.p,FC[f])}).join("");
+  h+=`<div class="chips">`+combos.map(c=>{const [f,rd]=c.split("|"),m=L.filter(a=>a.f===f&&a.rd===rd),on=m.every(a=>dn(a.k)>=.999);return `<button class="chip all ${on?"on":""}" data-g="${b}|${c}" ${dis()}>All ${f} ${rd}</button>`}).join("")+`</div>`;
+  R.forEach(r=>{const pr=prog[r.did],w=pr&&pr.at?`Updated ${dstr(pr.at)}${who(pr.by)?" by "+who(pr.by):""}`:"";
+   h+=`<div class="sb"><div class="row"><b>Block ${r.sub}</b><span class="mut">${r.ha} ha · ${r.pl.toLocaleString()} palms</span></div>${w?`<div class="mut">${w}</div>`:""}`+
+   r.a.map((a,i)=>{const k=r.did+"#"+i,fr=Math.min(1,dn(k)),full=fr>=.999;return `<div class="ar"><div class="row"><span>${a.f} · ${a.rd}</span><span class="mut">${a.rate} kg/palm · plan ${f2(a.t)} mt</span></div><div class="row" style="margin-top:4px"><span><input type="number" step="any" min="0" value="${fr?+(fr*a.t).toFixed(2):""}" placeholder="0" data-p="${k}" data-pt="${a.t}" aria-label="${a.f} ${a.rd} applied mt, block ${b} ${r.sub}" ${dis()}> mt <span class="mut">(${f1(fr*100)}%)</span></span><button class="chip ${full?"on":""}" data-k="${k}" ${dis()}>Full</button></div>${bar(fr*100,FC[a.f])}</div>`}).join("")+`</div>`});
+  h+=`</details>`});return h}
+function render(){
+ document.querySelectorAll(".tabs button").forEach(b=>b.classList.toggle("on",b.dataset.t===tab));
+ const rs=cur(),A=apps(rs);document.getElementById("flt").style.display=tab==="s"?"none":"";let h="";
+ if(tab==="o"){const all=stat(A),a1=stat(A.filter(a=>a.h===1)),a2=stat(A.filter(a=>a.h===2));
+  h+=`<div class="card"><div class="mut">Overall program</div><div class="big">${f1(all.p)}%</div>${bar(all.p)}<div class="mut">${f1(all.D)} of ${f1(all.T)} mt applied · ${rs.reduce((s,r)=>s+r.ha,0).toFixed(0)} ha</div></div>`;
+  h+=`<div class="grid">`+[[a1,"1st half","Jan–Jun","var(--h1)"],[a2,"2nd half","Jul–Oct","var(--h2)"]].map(([s,n,m,c])=>`<div class="card"><div class="mut">${n} · ${m}</div><div class="big">${f1(s.p)}%</div>${bar(s.p,c)}<div class="mut">${f1(s.D)} / ${f1(s.T)} mt</div></div>`).join("")+`</div><h3>By fertiliser</h3>`+fertList(A)}
+ if(tab==="z")h+=fertList(A,true);
+ if(tab==="s")h+=stockView();
+ if(tab==="f")h+=fieldsView(rs);
+ document.getElementById("v").innerHTML=h;
+ /* status */
+ let st="";
+ if(note)st=note;
+ else if(mode==="local")st="Saved on this device only. Shared editing isn't available here.";
+ else if(mode==="loading")st="Connecting…";
+ else if(stale)st="Can't reach shared data yet. Figures may be out of date.";
+ else if(!canWrite)st="<b>View only</b> · you can see progress but not edit it.";
+ else st="<b>Shared</b> · everyone with the link sees changes live.";
+ const s=document.getElementById("st");s.innerHTML=st;s.className="st"+(stale?" warn":"");
+ /* import banner */
+ let bn="";
+ if(mode==="shared"&&live&&canWrite&&!dismissed&&!Object.keys(prog).length&&!trips.length&&legacyCount())bn=`<div class="bn"><span>This device has progress saved from the earlier version.</span><span><button class="chip" id="imp">Import it</button> <button class="chip" id="skip">Skip</button></span></div>`;
+ document.getElementById("bn").innerHTML=bn;
+ /* footer */
+ document.getElementById("ft").innerHTML=(isAdmin&&(mode==="local"||canWrite)&&(Object.keys(prog).length))?`<button class="reset ${armReset?"arm":""}" id="rs">${armReset?"Tap again to clear all application progress for everyone":"Reset all application progress"}</button>`:"";
+}
+function refresh(){const a=document.activeElement;if(a&&a.tagName==="INPUT"&&document.getElementById("v").contains(a)){pending=true;return}render()}
+
+/* events */
+document.addEventListener("change",e=>{const d=e.target.dataset;if(!d)return;
+ if(d.p){const v=parseFloat(e.target.value),t=+d.pt;setMany([[d.p,v>0?Math.min(1,v/t):0]]);return}
+ if(d.e){const v=parseFloat(e.target.value);if(!(v>=0)){render();return}editTrip(d.e,v)}});
+document.addEventListener("focusout",()=>{if(pending)setTimeout(()=>{const a=document.activeElement;if(pending&&!(a&&a.tagName==="INPUT")){pending=false;render()}},200)});
+document.addEventListener("click",e=>{const t=e.target;
+ const ad=t.closest("[data-a]");if(ad){const k=ad.dataset.a,el=document.getElementById("n-"+k),v=parseFloat(el.value);if(!(v>0))return;const [f,h]=k.split("|");addTrip(f,+h,v);return}
+ const dx=t.closest("[data-x]");if(dx){const id=dx.dataset.x;if(armed===id){armed="";delTrip(id)}else{armed=id;render();setTimeout(()=>{if(armed===id){armed="";render()}},4000)}return}
+ const tb=t.closest(".tabs [data-t]");if(tb){tab=tb.dataset.t;render();return}
+ const k=t.closest("[data-k]");if(k){const x=k.dataset.k;setMany([[x,dn(x)>=.999?0:1]]);return}
+ const g=t.closest("[data-g]");if(g){const [b,f,rd]=g.dataset.g.split("|");const m=apps(rows.filter(r=>r.blk===b)).filter(a=>a.f===f&&a.rd===rd);const all=m.every(a=>dn(a.k)>=.999);setMany(m.map(a=>[a.k,all?0:1]));return}
+ if(t.id==="imp"){importLegacy();return}
+ if(t.id==="skip"){dismissed=true;render();return}
+ if(t.id==="rs"){if(armReset){armReset=false;resetAll()}else{armReset=true;render();setTimeout(()=>{if(armReset){armReset=false;render()}},4000)}}});
+document.addEventListener("toggle",e=>{if(e.target.dataset&&e.target.dataset.b)open[e.target.dataset.b]=e.target.open},true);
+document.getElementById("flt").onchange=render;
+
+/* boot */
+render();
+(async function(){
+ const c=window.claude;
+ try{db=c&&c.use?await c.use("db"):null}catch(e){db=null}
+ try{userCap=c&&c.use?await c.use("user"):null}catch(e){userCap=null}
+ if(userCap){
+  try{uid=(await userCap.id())||""}catch(e){}
+  try{canWrite=(await userCap.can("data.write"))!==false}catch(e){}
+  try{isAdmin=!!(await userCap.canEdit())}catch(e){}
+ }
+ if(!db){mode="local";isAdmin=true;loadLocal();render();return}
+ mode="shared";render();
+ const tm=setTimeout(()=>{if(!live){stale=true;render()}},10000);
+ const onFirst=s=>{if(!s.metadata.fromCache){live=true;stale=false;clearTimeout(tm)}};
+ const onErr=e=>{clearTimeout(tm);if(e&&e.code==="revoked"){canWrite=false}else stale=true;refresh()};
+ db.collection("progress").onSnapshot(s=>{const p={};s.docs.forEach(d=>{p[d.id]=d.data()});prog=p;onFirst(s);refresh();needNames()},onErr);
+ db.collection("trips").orderBy("ts").onSnapshot(s=>{trips=s.docs.map(d=>({id:d.id,...d.data()}));onFirst(s);refresh();needNames()},onErr);
+})();
+</script>
+
+</body></html>
